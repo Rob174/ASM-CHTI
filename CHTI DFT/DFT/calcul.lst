@@ -1,0 +1,92 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         
+    2 00000000                 thumb
+    3 00000000                 area             moncode, code, readwrite
+    4 00000000                 export           calcul
+    5 00000000                 import           TabCos
+    6 00000000                 import           TabSin
+    7 00000000         
+    8 00000000         calcul  proc
+    9 00000000 B410            push             {r4}
+   10 00000002 B420            push             {r5}
+   11 00000004 B440            push             {r6}
+   12 00000006 4C06            ldr              r4, =TabCos ; on recupère les a
+                                                            dreeses du debut de
+                                                            s tables de sin et 
+                                                            cos
+   13 00000008 4A06            ldr              r2, =TabSin
+   14 0000000A 5825            ldr              r5, [r4, r0] ; on se décale jus
+                                                            qu'à l'indice désir
+                                                            é (arg angle)
+   15 0000000C 5816            ldr              r6, [r2, r0]
+   16 0000000E FB05 F305       mul              r3, r5, r5  ; on fait le calcul
+                                                             de cos² + sin²
+   17 00000012 FB06 3C06       mla              r12, r6, r6, r3
+   18 00000016 F8C1 C000       str              r12, [r1]   ; on retourne le re
+                                                            sultat (dans l'arg 
+                                                            res)
+   19 0000001A BC40            pop              {r6}
+   20 0000001C BC20            pop              {r5}
+   21 0000001E BC10            pop              {r4}
+   22 00000020                 endp
+   23 00000020                 end
+              00000000 
+              00000000 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\obj\calcul.d -o.\obj\calcul.o -I.\RTE\_Simu -IC:\Keil_v5\ARM\PAC
+K\ARM\CMSIS\5.3.0\CMSIS\Include -IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\
+Device\Include --predefine="__EVAL SETA 1" --predefine="__MICROLIB SETA 1" --pr
+edefine="__UVISION_VERSION SETA 525" --predefine="_RTE_ SETA 1" --predefine="ST
+M32F10X_MD SETA 1" --list=calcul.lst Calcul.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+calcul 00000000
+
+Symbol: calcul
+   Definitions
+      At line 8 in file Calcul.asm
+   Uses
+      At line 4 in file Calcul.asm
+Comment: calcul used once
+moncode 00000000
+
+Symbol: moncode
+   Definitions
+      At line 3 in file Calcul.asm
+   Uses
+      None
+Comment: moncode unused
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+TabCos 00000000
+
+Symbol: TabCos
+   Definitions
+      At line 5 in file Calcul.asm
+   Uses
+      At line 12 in file Calcul.asm
+Comment: TabCos used once
+TabSin 00000000
+
+Symbol: TabSin
+   Definitions
+      At line 6 in file Calcul.asm
+   Uses
+      At line 13 in file Calcul.asm
+Comment: TabSin used once
+2 symbols
+341 symbols in table
