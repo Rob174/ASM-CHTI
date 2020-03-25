@@ -47,3 +47,8 @@ calcul_dft/calcul.lst
 startup-rvds.s
 Signal.asm
 Trigo.asm
+calcul_dft/calculmodule.lst
+calcul_dft/calculre.lst
+calcul_dft/Obj/calculmodule.d
+calcul_dft/Obj/calculre.d
+calcul_dft/Obj/calculre.o

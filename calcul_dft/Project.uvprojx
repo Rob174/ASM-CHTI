@@ -392,6 +392,16 @@
               <FileType>2</FileType>
               <FilePath>.\Calcul.s</FilePath>
             </File>
+            <File>
+              <FileName>CalculRe.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\CalculRe.s</FilePath>
+            </File>
+            <File>
+              <FileName>CalculModule.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\CalculModule.s</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
