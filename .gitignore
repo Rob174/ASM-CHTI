@@ -6,3 +6,11 @@ calcul_dft/Signal.asm
 calcul_dft/startup-rvds.lst
 calcul_dft/startup-rvds.s
 calcul_dft/Trigo.asm
+test_DFT/f17p30_f18p135.asm
+test_DFT/f1p-45.asm
+test_DFT/f23p-26_f24p-116.asm
+test_DFT/trigo.asm
+calcul_dft/test_DFT/trigo.asm
+calcul_dft/test_DFT/f23p-26_f24p-116.asm
+calcul_dft/test_DFT/f1p-45.asm
+calcul_dft/test_DFT/f17p30_f18p135.asm

@@ -5,9 +5,16 @@
 	import TabCos
 	import TabSin
 	import LeSignal
-
+calcul proc
+	push {lr}
+	; r0 contiendra k
+	push {r1}
+	mov r1, r0
+	bl	calculSin
+	pop {r1}
+	pop {pc}
+	endp
 calculSin proc
-    push {lr}
 	push {r4}
 	push {r5}
 	push {r6}
@@ -39,6 +46,7 @@ debutBcl mul r6, r1, r3
 	pop {r6}
 	pop {r5}
 	pop {r4}
-    pop {pc}
+	bx	lr
+	
     endp
     end
