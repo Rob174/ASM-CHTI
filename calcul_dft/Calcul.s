@@ -14,7 +14,7 @@ calcul proc
 	pop {r1}
 	pop {pc}
 	endp
-calculSin proc
+calculSin proc 
 	push {r4}
 	push {r5}
 	push {r6}
