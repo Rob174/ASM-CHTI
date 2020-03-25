@@ -6,3 +6,9 @@ calcul_dft/Signal.asm
 calcul_dft/startup-rvds.lst
 calcul_dft/startup-rvds.s
 calcul_dft/Trigo.asm
+Signal.asm
+Trigo.asm
+startup-rvds.s
+calcul_dft/Src/principal.c
+calcul_dft/Src/callback.s
+calcul_dft/Project.uvguix.elies
