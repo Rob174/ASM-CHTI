@@ -7,9 +7,10 @@ calculModule	proc
     ;r1 : Re
 	push {lr}
 	mov r3, #0
-    smlal r0,r3,r0,r0
-    smlal r3,r0,r1,r1
-	str r3, [r2]
+    SMULL r12,r3,r0,r0
+    SMULL r12,r0,r1,r1
+	add r1, r3, r0
+	str r1, [r2]
     ;and r2, #0xFFFFFFFF
 	pop {pc}
 	endp
