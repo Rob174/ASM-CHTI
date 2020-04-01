@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-void calculModule(short *,int);
+int calculModule(short *,int);
 
-extern short tabSig[];
+extern short TabSig[];
+
 int main(){
-	int res[64]
-	for (k =1; k<65; k++){
-		res[k-1] = calculModule(tabSig, k);
+	int res[64];
+	for (int k =1; k<65; k++){
+		res[k-1] = calculModule(TabSig, k);
 	}
 	while(1){}
 }
