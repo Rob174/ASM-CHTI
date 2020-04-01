@@ -402,15 +402,10 @@
               <FileType>4</FileType>
               <FilePath>.\gassp72.lib</FilePath>
             </File>
-            <File>
-              <FileName>startup-rvds.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Src\startup-rvds.s</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>Lib</GroupName>
+          <GroupName>Sig</GroupName>
           <Files>
             <File>
               <FileName>Signal.asm</FileName>
@@ -421,6 +416,16 @@
               <FileName>Trigo.asm</FileName>
               <FileType>2</FileType>
               <FilePath>.\Trigo.asm</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Sys</GroupName>
+          <Files>
+            <File>
+              <FileName>startup-rvds.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\startup-rvds.s</FilePath>
             </File>
           </Files>
         </Group>
