@@ -1,19 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+void calculModule(short *,int);
 
-void calculIm(int * resIm, int k);
-void calculRe(int * resRe, int k);
-void calculModule(int resRe, int resIm, int * module);
-int * resRe;
-int * resIm;
-int * module;
-
+extern short tabSig[];
 int main(){
-		resRe = malloc(sizeof(int));
-		resIm = malloc(sizeof(int));
-		module = malloc(sizeof(int));
-		calculIm(resIm, 23);
-		calculRe(resRe, 23);
-		calculModule(*resRe, *resIm, module);
-		while(1){}
+	int res[64]
+	for (k =1; k<65; k++){
+		res[k-1] = calculModule(tabSig, k);
+	}
+	while(1){}
 }

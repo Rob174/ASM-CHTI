@@ -1,0 +1,383 @@
+Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(i.main) refers to malloc.o(i.malloc) for malloc
+    main.o(i.main) refers to calcul.o(moncode) for calculIm
+    main.o(i.main) refers to calculre.o(moncode) for calculRe
+    main.o(i.main) refers to calculmodule.o(moncode) for calculModule
+    main.o(i.main) refers to main.o(.data) for resRe
+    calcul.o(moncode) refers (Special) to trigo.o(Trigo) for TabCos
+    calcul.o(moncode) refers to f23p-26_f24p-116.o(Signal) for TabSig
+    calculre.o(moncode) refers (Special) to trigo.o(Trigo) for TabSin
+    calculre.o(moncode) refers to f23p-26_f24p-116.o(Signal) for TabSig
+    startup-rvds.o(RESET) refers to startup-rvds.o(STACK) for __initial_sp
+    startup-rvds.o(RESET) refers to startup-rvds.o(.text) for Reset_Handler
+    startup-rvds.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    malloc.o(i.free) refers to mvars.o(.data) for __microlib_freelist
+    malloc.o(i.malloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    malloc.o(i.malloc) refers to mvars.o(.data) for __microlib_freelist
+    malloc.o(i.malloc) refers to startup-rvds.o(HEAP) for __heap_base
+    mallocr.o(i.__free$realloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocr.o(i.__malloc$realloc) refers to mallocr.o(i.internal_alloc) for internal_alloc
+    mallocr.o(i.__malloc$realloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    mallocr.o(i.__malloc$realloc) refers to startup-rvds.o(HEAP) for __heap_base
+    mallocr.o(i.__malloc$realloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocr.o(i.internal_alloc) refers to memcpya.o(.text) for __aeabi_memcpy
+    mallocr.o(i.internal_alloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocr.o(i.realloc) refers to mallocr.o(i.__free$realloc) for __free$realloc
+    mallocr.o(i.realloc) refers to mallocr.o(i.internal_alloc) for internal_alloc
+    mallocr.o(i.realloc) refers to mallocr.o(i.__malloc$realloc) for __malloc$realloc
+    mallocr.o(i.realloc) refers to mvars.o(.data) for __microlib_freelist
+    malloca.o(i.__aligned_malloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    malloca.o(i.__aligned_malloc) refers to mvars.o(.data) for __microlib_freelist
+    malloca.o(i.__aligned_malloc) refers to startup-rvds.o(HEAP) for __heap_base
+    malloca.o(i.__free$memalign) refers to mvars.o(.data) for __microlib_freelist
+    malloca.o(i.__malloc$memalign) refers to malloca.o(i.__aligned_malloc) for __aligned_malloc
+    mallocra.o(i.__aligned_malloc$realloc) refers to mallocra.o(i.internal_alloc) for internal_alloc
+    mallocra.o(i.__aligned_malloc$realloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    mallocra.o(i.__aligned_malloc$realloc) refers to startup-rvds.o(HEAP) for __heap_base
+    mallocra.o(i.__aligned_malloc$realloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocra.o(i.__free$realloc$memalign) refers to mvars.o(.data) for __microlib_freelist
+    mallocra.o(i.__malloc$realloc$memalign) refers to mallocra.o(i.__aligned_malloc$realloc) for __aligned_malloc$realloc
+    mallocra.o(i.__realloc$memalign) refers to mallocra.o(i.__free$realloc$memalign) for __free$realloc$memalign
+    mallocra.o(i.__realloc$memalign) refers to mallocra.o(i.internal_alloc) for internal_alloc
+    mallocra.o(i.__realloc$memalign) refers to mallocra.o(i.__malloc$realloc$memalign) for __malloc$realloc$memalign
+    mallocra.o(i.__realloc$memalign) refers to mvars.o(.data) for __microlib_freelist
+    mallocra.o(i.internal_alloc) refers to memcpya.o(.text) for __aeabi_memcpy
+    mallocra.o(i.internal_alloc) refers to mvars.o(.data) for __microlib_freelist
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup-rvds.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup-rvds.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing signal.o(Signal), (2048 bytes).
+
+1 unused section(s) (total 2048 bytes) removed from the image.
+
+==============================================================================
+
+Adding Veneers to the image
+
+    Adding TT veneer (10 bytes, Long) for call to 'calculIm' from main.o(i.main).
+    Adding TT veneer (10 bytes, Long) for call to 'calculRe' from main.o(i.main).
+    Adding TT veneer (10 bytes, Long) for call to 'calculModule' from main.o(i.main).
+
+3 Veneer(s) (total 30 bytes) added to the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  malloc.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  mallocr.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  malloca.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  mallocra.o ABSOLUTE
+    ../clib/microlib/malloc/mvars.c          0x00000000   Number         0  mvars.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    Calcul.s                                 0x00000000   Number         0  calcul.o ABSOLUTE
+    CalculModule.s                           0x00000000   Number         0  calculmodule.o ABSOLUTE
+    CalculRe.s                               0x00000000   Number         0  calculre.o ABSOLUTE
+    Signal.asm                               0x00000000   Number         0  signal.o ABSOLUTE
+    Trigo.asm                                0x00000000   Number         0  trigo.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    f23p-26_f24p-116.asm                     0x00000000   Number         0  f23p-26_f24p-116.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    startup-rvds.s                           0x00000000   Number         0  startup-rvds.o ABSOLUTE
+    RESET                                    0x08000000   Section      236  startup-rvds.o(RESET)
+    .ARM.Collect$$$$00000000                 0x080000ec   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x080000ec   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x080000f0   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x080000f4   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x080000f4   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x080000f4   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x080000fc   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x080000fc   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x080000fc   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x080000fc   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x08000100   Section       76  startup-rvds.o(.text)
+    .text                                    0x0800014c   Section       36  init.o(.text)
+    i.__scatterload_copy                     0x0800018e   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x0800019c   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x0800019e   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.main                                   0x080001ac   Section        0  main.o(i.main)
+    i.malloc                                 0x08000204   Section        0  malloc.o(i.malloc)
+    Signal                                   0x08000290   Section      128  f23p-26_f24p-116.o(Signal)
+    Trigo                                    0x08000310   Section      256  trigo.o(Trigo)
+    moncode                                  0x20000000   Section       84  calcul.o(moncode)
+    calculSin                                0x20000011   Thumb Code    60  calcul.o(moncode)
+    moncode                                  0x20000054   Section       84  calculre.o(moncode)
+    calculCos                                0x20000065   Thumb Code    60  calculre.o(moncode)
+    moncode                                  0x200000a8   Section       22  calculmodule.o(moncode)
+    .data                                    0x200000c0   Section       12  main.o(.data)
+    .data                                    0x200000cc   Section        4  mvars.o(.data)
+    .data                                    0x200000d0   Section        4  mvars.o(.data)
+    HEAP                                     0x200000d8   Section      512  startup-rvds.o(HEAP)
+    STACK                                    0x200002d8   Section     1024  startup-rvds.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_Size                           0x000000ec   Number         0  startup-rvds.o ABSOLUTE
+    __Vectors                                0x08000000   Data           4  startup-rvds.o(RESET)
+    __Vectors_End                            0x080000ec   Data           0  startup-rvds.o(RESET)
+    __main                                   0x080000ed   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x080000ed   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x080000f1   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x080000f5   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x080000f5   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x080000f5   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x080000f5   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x080000fd   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x080000fd   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x08000101   Thumb Code    34  startup-rvds.o(.text)
+    SystemInit                               0x08000123   Thumb Code     2  startup-rvds.o(.text)
+    NMI_Handler                              0x08000125   Thumb Code     2  startup-rvds.o(.text)
+    HardFault_Handler                        0x08000127   Thumb Code     2  startup-rvds.o(.text)
+    MemManage_Handler                        0x08000129   Thumb Code     2  startup-rvds.o(.text)
+    BusFault_Handler                         0x0800012b   Thumb Code     2  startup-rvds.o(.text)
+    UsageFault_Handler                       0x0800012d   Thumb Code     2  startup-rvds.o(.text)
+    SVC_Handler                              0x0800012f   Thumb Code     2  startup-rvds.o(.text)
+    DebugMon_Handler                         0x08000131   Thumb Code     2  startup-rvds.o(.text)
+    PendSV_Handler                           0x08000133   Thumb Code     2  startup-rvds.o(.text)
+    SysTick_Handler                          0x08000135   Thumb Code     2  startup-rvds.o(.text)
+    ADC1_2_IRQHandler                        0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    CAN1_RX1_IRQHandler                      0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    CAN1_SCE_IRQHandler                      0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    DMA1_Channel1_IRQHandler                 0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    DMA1_Channel2_IRQHandler                 0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    DMA1_Channel3_IRQHandler                 0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    DMA1_Channel4_IRQHandler                 0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    DMA1_Channel5_IRQHandler                 0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    DMA1_Channel6_IRQHandler                 0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    DMA1_Channel7_IRQHandler                 0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    EXTI0_IRQHandler                         0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    EXTI15_10_IRQHandler                     0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    EXTI1_IRQHandler                         0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    EXTI2_IRQHandler                         0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    EXTI3_IRQHandler                         0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    EXTI4_IRQHandler                         0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    EXTI9_5_IRQHandler                       0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    FLASH_IRQHandler                         0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    I2C1_ER_IRQHandler                       0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    I2C1_EV_IRQHandler                       0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    I2C2_ER_IRQHandler                       0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    I2C2_EV_IRQHandler                       0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    PVD_IRQHandler                           0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    RCC_IRQHandler                           0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    RTCAlarm_IRQHandler                      0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    RTC_IRQHandler                           0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    SPI1_IRQHandler                          0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    SPI2_IRQHandler                          0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    TAMPER_IRQHandler                        0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    TIM1_BRK_IRQHandler                      0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    TIM1_CC_IRQHandler                       0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    TIM1_TRG_COM_IRQHandler                  0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    TIM1_UP_IRQHandler                       0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    TIM2_IRQHandler                          0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    TIM3_IRQHandler                          0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    TIM4_IRQHandler                          0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    USART1_IRQHandler                        0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    USART2_IRQHandler                        0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    USART3_IRQHandler                        0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    USBWakeUp_IRQHandler                     0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    USB_HP_CAN1_TX_IRQHandler                0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    USB_LP_CAN1_RX0_IRQHandler               0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    WWDG_IRQHandler                          0x08000137   Thumb Code     0  startup-rvds.o(.text)
+    __scatterload                            0x0800014d   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x0800014d   Thumb Code     0  init.o(.text)
+    Long Thumb to Thumb Veneer to calculIm   0x08000171   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to calculRe   0x0800017b   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to calculModule 0x08000185   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    __scatterload_copy                       0x0800018f   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x0800019d   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x0800019f   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    main                                     0x080001ad   Thumb Code    74  main.o(i.main)
+    malloc                                   0x08000205   Thumb Code    92  malloc.o(i.malloc)
+    Region$$Table$$Base                      0x08000270   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08000290   Number         0  anon$$obj.o(Region$$Table)
+    TabSig                                   0x08000290   Data           0  f23p-26_f24p-116.o(Signal)
+    TabCos                                   0x08000310   Data           0  trigo.o(Trigo)
+    TabSin                                   0x08000390   Data           0  trigo.o(Trigo)
+    calculIm                                 0x20000001   Thumb Code    16  calcul.o(moncode)
+    calculRe                                 0x20000055   Thumb Code    16  calculre.o(moncode)
+    calculModule                             0x200000a9   Thumb Code    22  calculmodule.o(moncode)
+    resRe                                    0x200000c0   Data           4  main.o(.data)
+    resIm                                    0x200000c4   Data           4  main.o(.data)
+    module                                   0x200000c8   Data           4  main.o(.data)
+    __microlib_freelist                      0x200000cc   Data           4  mvars.o(.data)
+    __microlib_freelist_initialised          0x200000d0   Data           4  mvars.o(.data)
+    __heap_base                              0x200000d8   Data           0  startup-rvds.o(HEAP)
+    __heap_limit                             0x200002d8   Data           0  startup-rvds.o(HEAP)
+    __initial_sp                             0x200006d8   Data           0  startup-rvds.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x080000ed
+
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000004e4, Max: 0x00020000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00000410, Max: 0x00020000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x08000000   0x000000ec   Data   RO           43    RESET               startup-rvds.o
+    0x080000ec   0x080000ec   0x00000000   Code   RO           48  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x080000ec   0x080000ec   0x00000004   Code   RO           79    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x080000f0   0x080000f0   0x00000004   Code   RO           82    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x080000f4   0x080000f4   0x00000000   Code   RO           84    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x080000f4   0x080000f4   0x00000000   Code   RO           86    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x080000f4   0x080000f4   0x00000008   Code   RO           87    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x080000fc   0x080000fc   0x00000000   Code   RO           89    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x080000fc   0x080000fc   0x00000000   Code   RO           91    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x080000fc   0x080000fc   0x00000004   Code   RO           80    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000100   0x08000100   0x0000004c   Code   RO           44    .text               startup-rvds.o
+    0x0800014c   0x0800014c   0x00000024   Code   RO           99    .text               mc_w.l(init.o)
+    0x08000170   0x08000170   0x0000000a   Ven    RO          109    Veneer$$Code        anon$$obj.o
+    0x0800017a   0x0800017a   0x0000000a   Ven    RO          110    Veneer$$Code        anon$$obj.o
+    0x08000184   0x08000184   0x0000000a   Ven    RO          111    Veneer$$Code        anon$$obj.o
+    0x0800018e   0x0800018e   0x0000000e   Code   RO          103    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x0800019c   0x0800019c   0x00000002   Code   RO          104    i.__scatterload_null  mc_w.l(handlers.o)
+    0x0800019e   0x0800019e   0x0000000e   Code   RO          105    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x080001ac   0x080001ac   0x00000058   Code   RO            1    i.main              main.o
+    0x08000204   0x08000204   0x0000006c   Code   RO           52    i.malloc            mc_w.l(malloc.o)
+    0x08000270   0x08000270   0x00000020   Data   RO          101    Region$$Table       anon$$obj.o
+    0x08000290   0x08000290   0x00000080   Data   RO           40    Signal              f23p-26_f24p-116.o
+    0x08000310   0x08000310   0x00000100   Data   RO           39    Trigo               trigo.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08000410, Size: 0x000006d8, Max: 0x00005000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x08000410   0x00000054   Code   RW           25    moncode             calcul.o
+    0x20000054   0x08000464   0x00000054   Code   RW           30    moncode             calculre.o
+    0x200000a8   0x080004b8   0x00000016   Code   RW           34    moncode             calculmodule.o
+    0x200000be   0x080004ce   0x00000002   PAD
+    0x200000c0   0x080004d0   0x0000000c   Data   RW            2    .data               main.o
+    0x200000cc   0x080004dc   0x00000004   Data   RW           97    .data               mc_w.l(mvars.o)
+    0x200000d0   0x080004e0   0x00000004   Data   RW           98    .data               mc_w.l(mvars.o)
+    0x200000d4   0x080004e4   0x00000004   PAD
+    0x200000d8        -       0x00000200   Zero   RW           42    HEAP                startup-rvds.o
+    0x200002d8        -       0x00000400   Zero   RW           41    STACK               startup-rvds.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+        84          8          0          0          0        396   calcul.o
+        22          0          0          0          0        324   calculmodule.o
+        84          8          0          0          0        372   calculre.o
+         0          0        128          0          0          0   f23p-26_f24p-116.o
+        88         14          0         12          0       2120   main.o
+        76         20        236          0       1536        800   startup-rvds.o
+         0          0        256          0          0          0   trigo.o
+
+    ----------------------------------------------------------------------
+       386         50        652         12       1536       4012   Object Totals
+        30          0         32          0          0          0   (incl. Generated)
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+       108         16          0          0          0         84   malloc.o
+         0          0          0          8          0          0   mvars.o
+
+    ----------------------------------------------------------------------
+       194         32          0          8          4        152   Library Totals
+         0          0          0          0          4          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       194         32          0          8          0        152   mc_w.l
+
+    ----------------------------------------------------------------------
+       194         32          0          8          4        152   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+       580         82        652         20       1540       4160   Grand Totals
+       580         82        652         20       1540       4160   ELF Image Totals
+       580         82        652         20          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 1232 (   1.20kB)
+    Total RW  Size (RW Data + ZI Data)              1560 (   1.52kB)
+    Total ROM Size (Code + RO Data + RW Data)       1252 (   1.22kB)
+
+==============================================================================
+
