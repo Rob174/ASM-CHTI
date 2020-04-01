@@ -1,36 +1,35 @@
-	
 	thumb
 	area moncode, code, readwrite
 	export calculModule
 	import TabCos
 	import TabSin
+	import TabSig
 
 		
 calculModule	proc
-	push {r0}
+	push {r4}
 	push {lr}
+	push {r0}
 	; r2 adresse de la table
 	ldr r2, =TabCos
-	b calcul
+	bl calcul
 	mov r3, #0
-    SMULL r12,r3,r0,r0
+    SMULL r2,r3,r12,r12
 	pop {r0}
 	push {lr}
 	ldr r2, =TabSin
-	b calcul
-    SMULL r12,r0,r1,r1
-	add r1, r3, r0
-	str r1, [r2]
+	bl calcul
+    SMULL r2,r4,r0,r0
+	add r1, r3, r4
+	mov r0, r1
+	pop {r4}
 	pop {pc}
 	endp
 		
 calcul proc
 	push {lr}
-	push {r0}
 	; r0 contiendra k
 	bl	calculTrig
-	pop {r0}
-	str	r12, [r0]
 	pop {pc}
 	endp
 		
@@ -43,7 +42,7 @@ calculTrig proc
 	ldr r3, =0x0
 	; le resultat sera stocke dans r12
 	ldr r12, =0x0
-	b debutBcl
+	bl debutBcl
 	pop {pc}
 	endp
 
@@ -64,6 +63,7 @@ boucle	mul r6, r1, r3
 	bne boucle
    ; sub #0, r12 ; on ajoute le -
 	; la valeur de retour est en r12
+	mov r0, r12
 	pop {r4-r7}
 	bx	lr
 	endp	

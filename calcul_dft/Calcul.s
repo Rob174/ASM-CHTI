@@ -8,7 +8,7 @@ calculIm proc
     push {lr}
     push {r0}
     ; r0 contiendra k
-    bl    calculSin
+    bl 	calculSin
     pop {r0}
     str  r12, [r0]
     pop {pc}
