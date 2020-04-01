@@ -7,21 +7,22 @@
 
 		
 calculModule	proc
-	push {r4}
 	push {lr}
+	push {r4}
+	push {r8}
 	push {r0}
 	; r2 adresse de la table
 	ldr r2, =TabCos
 	bl calcul
 	mov r3, #0
-    SMULL r2,r3,r12,r12
+    SMULL r2,r8,r0,r0
 	pop {r0}
-	push {lr}
 	ldr r2, =TabSin
 	bl calcul
-    SMULL r2,r4,r0,r0
-	add r1, r3, r4
-	mov r0, r1
+	mov r4, #0
+    SMULL r4, r12, r0, r0
+	add r0, r12, r8
+	pop {r8}
 	pop {r4}
 	pop {pc}
 	endp

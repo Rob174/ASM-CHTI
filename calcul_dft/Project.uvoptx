@@ -142,38 +142,6 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>21</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>536870938</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>.\CalculModule.s</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\CHTI\CalculModule.s\21</Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>15</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>536870920</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>.\CalculModule.s</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\CHTI\CalculModule.s\15</Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
           <LineNumber>17</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>134218208</Address>
@@ -188,11 +156,11 @@
           <Expression>\\CHTI\main.c\17</Expression>
         </Bp>
         <Bp>
-          <Number>3</Number>
+          <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>67</LineNumber>
+          <LineNumber>16</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>536871014</Address>
+          <Address>536870924</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -201,14 +169,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>.\CalculModule.s</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\CHTI\CalculModule.s\67</Expression>
+          <Expression>\\CHTI\CalculModule.s\16</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>res[0]</ItemText>
+          <ItemText>res[22]</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
