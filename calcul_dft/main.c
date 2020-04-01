@@ -12,8 +12,8 @@ int main(){
 		resRe = malloc(sizeof(int));
 		resIm = malloc(sizeof(int));
 		module = malloc(sizeof(int));
-		calculIm(resIm, 1);
-		calculRe(resRe, 1);
+		calculIm(resIm, 17);
+		calculRe(resRe, 17);
 		calculModule(*resRe, *resIm, module);
 		while(1){}
 }

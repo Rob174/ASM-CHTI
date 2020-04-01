@@ -25,10 +25,9 @@ calculSin proc
     ; r2 adresse de la table
 	ldr r2, =TabSin
 	; i est stocke en r3 : 
-	; affectation d'après https://community.arm.com/developer/ip-products/processors/f/cortex-a-forum/4315/how-many-ways-to-set-a-register-32-bit-value
-	ldr r3, =0x0
+	mov r3, #0x0
 	; le resultat sera stocke dans r12
-	ldr r12, =0x0
+	mov r12, #0x0
 
 debutBclSin mul r6, r1, r3
     ; on ramène ik dans la plage [0;64-1]
