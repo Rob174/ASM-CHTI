@@ -8,4 +8,4 @@ Etape 1 : fait (pas sur le git mais testé en cours)
 
 Etape 2.1 -> fait -> /cos-sin-carre
 
-Etape 2.2 -> en cours -> /calcul-dft
+Etape 2.2 -> fini -> /calcul-dft
