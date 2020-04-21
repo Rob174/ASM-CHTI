@@ -56,3 +56,5 @@ calcul_dft/Obj/f17p30_f18p135.o
 calcul_dft/f17p30_f18p135.lst
 calcul_dft/Obj/calculmodule.o
 calcul_dft/Obj/f17p30_f18p135.d
+*.o
+*.lst

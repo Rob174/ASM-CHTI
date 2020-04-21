@@ -1,12 +1,8 @@
 --cpu Cortex-M3
-".\obj\main.o"
-".\obj\calcul.o"
-".\obj\calculre.o"
 ".\obj\calculmodule.o"
-".\gassp72.lib"
-".\obj\signal.o"
+".\obj\main.o"
+".\gfssp72.lib"
 ".\obj\trigo.o"
-".\obj\f23p-26_f24p-116.o"
 ".\obj\startup-rvds.o"
 --library_type=microlib --strict --scatter ".\Obj\CHTI.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols

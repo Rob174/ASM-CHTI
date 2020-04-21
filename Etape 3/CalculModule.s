@@ -3,7 +3,6 @@
 	export calculModule
 	import TabCos
 	import TabSin
-	import TabSig
 
 		
 calculModule	proc
