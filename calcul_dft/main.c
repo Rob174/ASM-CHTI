@@ -9,6 +9,9 @@ int k;
 
 int main(){
 	for (k =1; k<65; k++){
+		if (k==23) {
+			int break_pt = -1;
+		}
 		res[k-1] = calculModule(&TabSig, k);
 		if (k == 23){
 			res_verif = res[k-1];
