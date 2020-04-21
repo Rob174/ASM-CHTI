@@ -7,6 +7,8 @@
 
 		
 calculModule	proc
+	;r0 : adresse de la table du signal
+	;r1 : valeur de k
 	push {lr}
 	push {r4}
 	push {r8}
@@ -28,27 +30,34 @@ calculModule	proc
 	endp
 		
 calcul proc
+	;r0 : adresse de la table du signal
+	;r1 : valeur de k
+	; r2 adresse de la table Cos ou Sin
 	push {lr}
-	; r0 contiendra k
 	bl	calculTrig
 	pop {pc}
 	endp
 		
 calculTrig proc 
 	push {lr}
-	push {r4-r7}
     ; r1 valeur de k
-	; i est stocke en r3 : 
-	; affectation d'après https://community.arm.com/developer/ip-products/processors/f/cortex-a-forum/4315/how-many-ways-to-set-a-register-32-bit-value
+	; r2 adresse de la table Cos ou Sin
+	; r3 : i
+	; r12 : résultat
 	ldr r3, =0x0
-	; le resultat sera stocke dans r12
 	ldr r12, =0x0
 	bl debutBcl
 	pop {pc}
 	endp
 
 debutBcl proc
-boucle	mul r6, r1, r3
+	;r0 : adresse de la table du signal
+	;r1 : valeur de k
+	;r2 adresse de la table Cos ou Sin
+	;r3 : valeur de i
+	;r12 : resultat
+	push {r4-r7}
+boucle	mul r6, r1, r3 ; r6 : ik
     ; on ramène ik dans la plage [0;64-1]
 	and	r6, r6, #63
 	; on se décale jusqu'à l'indice désiré (arg angle)
@@ -62,9 +71,8 @@ boucle	mul r6, r1, r3
 	add r3, #1
 	cmp r3, #64
 	bne boucle
-   ; sub #0, r12 ; on ajoute le -
 	; la valeur de retour est en r12
-	mov r0, r12
+	mov r0, r12; la valeur de retour est en r0
 	pop {r4-r7}
 	bx	lr
 	endp	

@@ -383,19 +383,14 @@
           <GroupName>Sources</GroupName>
           <Files>
             <File>
-              <FileName>Calcul.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Calcul.s</FilePath>
-            </File>
-            <File>
-              <FileName>CalculRe.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\CalculRe.s</FilePath>
-            </File>
-            <File>
               <FileName>CalculModule.s</FileName>
               <FileType>2</FileType>
               <FilePath>.\CalculModule.s</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\main.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -403,9 +398,14 @@
           <GroupName>Driver</GroupName>
           <Files>
             <File>
-              <FileName>gassp72.lib</FileName>
+              <FileName>gfssp72.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>.\gassp72.lib</FilePath>
+              <FilePath>.\gfssp72.lib</FilePath>
+            </File>
+            <File>
+              <FileName>gassp72.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\gassp72.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -413,19 +413,9 @@
           <GroupName>Sig</GroupName>
           <Files>
             <File>
-              <FileName>Signal.asm</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Signal.asm</FilePath>
-            </File>
-            <File>
               <FileName>Trigo.asm</FileName>
               <FileType>2</FileType>
               <FilePath>.\Trigo.asm</FilePath>
-            </File>
-            <File>
-              <FileName>f23p-26_f24p-116.asm</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\f23p-26_f24p-116.asm</FilePath>
             </File>
           </Files>
         </Group>
