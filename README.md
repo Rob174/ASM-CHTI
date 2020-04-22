@@ -8,4 +8,8 @@ Etape 1 : fait (pas sur le git mais testé en cours)
 
 Etape 2.1 -> fait -> /cos-sin-carre
 
-Etape 2.2 -> en cours -> /calcul-dft
+Etape 2.2 -> Fait -> /calcul-dft
+
+Etape 3 -> En cours -> /Etape 3
+
+OBJ 1 : COMMIT 566002bd9261490b43d291e45d73f114893d623f | Factorisation DFT Terminée
